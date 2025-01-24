@@ -19,3 +19,7 @@ Navigace je intuitivní, s hlavním menu rozděleným na kategorie, vyhledáván
 ## Wireframes
 
 ![Wireframe](./wireframe.jpg)
+
+## DB schema
+
+![DB_schema]()
