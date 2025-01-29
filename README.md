@@ -8,7 +8,7 @@ Cílem projektu je vytvoření elektronické nákupní platformy specializované
 
 - Produkt –> název, cena, dostupnost, výrobce, kategorie, popis, obrázek.
 - Kategorie –> název, seznam produktů.
-- Uživatel –> jméno, e-mail, heslo, historie objednávek.
+- Uživatel [kupující/prodávající] –> jméno, e-mail, heslo, historie objednávek, inzeráty.
 - Košík –> produkty, celková cena, způsob platby.
 - Objednávka –> uživatel, seznam produktů, cena, stav objednávky.
 
