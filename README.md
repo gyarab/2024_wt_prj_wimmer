@@ -11,6 +11,7 @@ Cílem projektu je vytvoření elektronické nákupní platformy specializované
 - Uživatel [kupující/prodávající] –> jméno, e-mail, heslo, historie objednávek, inzeráty.
 - Košík –> produkty, celková cena, způsob platby.
 - Objednávka –> uživatel, seznam produktů, cena, stav objednávky.
+- Recenze -> jméno uživatele, název produktu.
 
 Uživatelské rozhraní umožňuje procházení kategorií, filtrování produktů podle specifikací (např. RAM, výrobce), přidání produktů do košíku a jejich objednání. Každý produkt má vlastní stránku s detaily, obrázky a recenzemi. Prodejci mohou přidávat produkty a spravovat objednávky. Administrace nabízí nastavení, konfiguraci a úpravu databáze produktů.
 
@@ -22,4 +23,4 @@ Navigace je intuitivní, s hlavním menu rozděleným na kategorie, vyhledáván
 
 ## DB schema
 
-![DB_schema]()
+![DB_schema](./DB_schema.jpg)
