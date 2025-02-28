@@ -85,6 +85,8 @@ def main() -> None:
         regime = collect_input("\n0 = konec programu\ncokoliv = nový převod")
 
         if (regime == "0"):
+            system("cls")
+            
             break
 
     return
