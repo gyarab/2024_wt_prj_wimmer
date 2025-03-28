@@ -1,13 +1,27 @@
 from django.contrib import admin
-from .models import Movie, Director
+from .models import Product, Category, User, Cart, Order, Recension
 
-class MovieAdmin(admin.ModelAdmin):
-    list_display = ["id", "name", "year", "director", "description"]
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ["id", "name", "price", "availability", "manufacturer", "category", "description", "picture"]
 
-    
-class DirectorAdmin(admin.ModelAdmin):
-    list_display = ["id", "name", "birth_year", "description"]
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ["id", "name", "list_of_products"]
 
-#Sample:
-admin.site.register(Movie, MovieAdmin)
-admin.site.register(Director, DirectorAdmin)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ["id", "name", "e_mail", "order_history", "advertisements"]
+
+class CartAdmin(admin.ModelAdmin):
+    list_display = ["id", "products_in", "total_price", "payment_method"]
+
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ["id", "user", "list_of_products", "price", "order_status"]
+
+class RecensionAdmin(admin.ModelAdmin):
+    list_display = ["id", "user", "product_name"]
+
+admin.site.register(Product, ProductAdmin)
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(User, UserAdmin)
+admin.site.register(Cart, CartAdmin )
+admin.site.register(Order, OrderAdmin)
+admin.site.register(Recension, RecensionAdmin)
