@@ -1,6 +1,12 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
+<p>Dnes na svatek {{ svatek }}</p>
+
+{% for movie in movies %}
+    <h2>{{ movie.title }}</h2>
+{% endfor %}
+
 <nav class="navbar navbar-expand-md bg-body-tertiary container-fluid">
     <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="#">
