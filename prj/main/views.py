@@ -7,10 +7,10 @@ def get_homepage(request):
 
         "svatek": "Libor",
         # SELECT * from Products ORDER BY "title" LIMIT 10;
-        "movies": Product.objects.all().order_by("title")[:10]
+        #"movies": Product.objects.all().order_by("title")[:10]
     }
 
-    products = Product.objects.all().order_by("title")
+    #products = Product.objects.all().order_by("title")
 
     #check if search parameter is in the request
     if request.GET.get("search"):
